@@ -94,11 +94,10 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 <img src="(https://i.imgur.com/Q7jRSWZ.jpg)" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-![](https://i.imgur.com/Q7jRSWZ.jpg)
-    
+![](https://i.imgur.com/Q7jRSWZ.jpg)  
 ### [BONUS] Interactive Prototype
-http://g.recordit.co/rdYC4KJ1e2.gif
 
+<img src="http://g.recordit.co/rdYC4KJ1e2.gif" width=250><br> 
 
 ## Schema 
 [This section will be completed in Unit 9]
