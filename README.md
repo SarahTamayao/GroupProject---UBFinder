@@ -91,7 +91,7 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="(https://i.imgur.com/Q7jRSWZ.jpg)" width=600>
+![](https://i.imgur.com/Q7jRSWZ.jpg)  
 
 ### [BONUS] Digital Wireframes & Mockups
 ![](https://i.imgur.com/Q7jRSWZ.jpg)  
