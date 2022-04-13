@@ -31,6 +31,7 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 
 **Required Must-have Stories**
 
+- [X] Users can view app icon and login page
 - [ ]  Users can login and view the homepage with buttons to go to the dining page and studying page
 - [ ] Users can rate different dining areas
 - [ ] Users can rate different study spots
