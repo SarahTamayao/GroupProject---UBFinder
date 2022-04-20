@@ -32,7 +32,7 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 **Required Must-have Stories**
 
 - [X] Users can view app icon and login page
-- [ ]  Users can login and view the homepage with buttons to go to the dining page and studying page
+- [X]  Users can login and view the homepage with buttons to go to the dining page and studying page
 - [ ] Users can rate different dining areas
 - [ ] Users can rate different study spots
 - [ ] Users can view existing ratings for dining areas
@@ -42,7 +42,7 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 
 **Optional Nice-to-have Stories**
 
-- [ ] Users can authenticate using their UBIT information
+- [X] Users can authenticate using their USERNAME & Password information
 - [ ] Users can favorite locations to pin them to the top of their page
 - [ ] Users can click on a live map to locate each spot
 - [ ] Users can view pictures of each spot
@@ -157,13 +157,19 @@ Locates areas for the optimal dining and studying experience based on ratings fr
     - (Delete rating)
 
 - Profile Screen [OPTIONAL]
-    - (Read/GET) Get user ID
+    - (Read/GET) Get user ID 
     - (Update/PUT) Update user profile image
 
 
 
 
-- [Create basic snippets for each Parse network request]
+###Sprint UNIT 11
+
+-[x] Users can view app icon and login page
+
+-[x] dataBase DONE
+  
+  ![ ](https://user-images.githubusercontent.com/97911585/164147572-d4706a80-6ae8-40c5-8e79-47d51460c848.GIF)
 
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
