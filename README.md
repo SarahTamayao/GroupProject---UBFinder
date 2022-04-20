@@ -165,8 +165,8 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 
 
 - Sprint UNIT 11
-  -[X] Users can view app icon and login page
-  -[x] dataBase DONE
+  -*[x] Users can view app icon and login page
+  -*[x] dataBase DONE
   
   
   ![ ](https://user-images.githubusercontent.com/97911585/164147572-d4706a80-6ae8-40c5-8e79-47d51460c848.GIF)
