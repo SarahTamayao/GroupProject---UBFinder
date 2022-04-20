@@ -248,6 +248,7 @@
                                     <tabBarItem title="Home" image="house.fill" catalog="system" id="0S7-qI-0HH"/>
                                     <tabBarItem title="Study" image="books.vertical.fill" catalog="system" id="zUE-wC-60P"/>
                                     <tabBarItem title="Eat" image="fork.knife" catalog="system" id="Q7l-gU-DC9"/>
+                                    <tabBarItem title="Profile" image="person.fill" catalog="system" id="UQH-ZJ-KI2"/>
                                     <tabBarItem systemItem="more" id="qZK-yp-IMa"/>
                                 </items>
                             </tabBar>
@@ -305,6 +306,7 @@
         <image name="fork.knife.circle.fill" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="instagram_logo" width="255" height="108"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
