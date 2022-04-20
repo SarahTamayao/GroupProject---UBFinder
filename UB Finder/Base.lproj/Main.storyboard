@@ -188,7 +188,7 @@
                                     <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="hnc-FQ-ogx" kind="show" id="7xN-bi-8lE"/>
+                                    <segue destination="hnc-FQ-ogx" kind="presentation" id="Ekk-Zp-K6q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSl-FW-6JY">
@@ -240,6 +240,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KB3-7q-6jd">
+                                <rect key="frame" x="-20" y="759" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="0S7-qI-0HH"/>
+                                    <tabBarItem title="Study" image="books.vertical.fill" catalog="system" id="zUE-wC-60P"/>
+                                    <tabBarItem title="Eat" image="fork.knife" catalog="system" id="Q7l-gU-DC9"/>
+                                    <tabBarItem systemItem="more" id="qZK-yp-IMa"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ucj-is-9di"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -288,8 +299,11 @@
     </scenes>
     <resources>
         <image name="books.vertical.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
         <image name="faviconn" width="500" height="500"/>
+        <image name="fork.knife" catalog="system" width="92" height="128"/>
         <image name="fork.knife.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="instagram_logo" width="255" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
