@@ -24,7 +24,7 @@
                                 <rect key="frame" x="57" y="423" width="270" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D24-7g-TeD">
                                 <rect key="frame" x="57" y="394" width="191" height="21"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="57" y="509" width="270" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdF-Bo-xLa">
                                 <rect key="frame" x="57" y="480" width="191" height="26"/>
@@ -55,7 +55,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onSignIn:" destination="84J-hb-eA3" eventType="touchUpInside" id="GYq-q3-o6A"/>
-                                    <segue destination="VlE-P2-M57" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="Ekk-Zp-K6q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSl-FW-6JY">
@@ -76,157 +75,155 @@
                     <connections>
                         <outlet property="passwordField" destination="N22-Nc-TQX" id="LYb-3K-CSn"/>
                         <outlet property="usernameField" destination="706-wl-QZd" id="iHq-as-zU9"/>
+                        <segue destination="WBB-dG-MzS" kind="show" identifier="loginSegue" id="5Rm-wl-85t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wO-8e-lSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-923.1884057971015" y="-730.58035714285711"/>
+            <point key="canvasLocation" x="-2222" y="194"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="Syt-IH-Rt6">
-            <objects>
-                <viewController title="Home" id="hnc-FQ-ogx" customClass="ViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5DF-ZJ-k78">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="books.vertical.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xkl-BD-gtK">
-                                <rect key="frame" x="87" y="191.5" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.14901961389999999" green="0.35686278339999999" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fork.knife.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fJM-Yy-adp">
-                                <rect key="frame" x="87" y="444.5" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.14901961389999999" green="0.35686278339999999" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4y-bu-CMA">
-                                <rect key="frame" x="149" y="328" width="116" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-fB-gcx">
-                                <rect key="frame" x="149" y="581" width="116" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KB3-7q-6jd">
-                                <rect key="frame" x="-20" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="0S7-qI-0HH"/>
-                                    <tabBarItem title="Study" image="books.vertical.fill" catalog="system" id="zUE-wC-60P"/>
-                                    <tabBarItem title="Eat" image="fork.knife" catalog="system" id="Q7l-gU-DC9"/>
-                                    <tabBarItem title="Profile" image="person.fill" catalog="system" id="UQH-ZJ-KI2"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ucj-is-9di"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="yCk-qV-87l"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ES3-WF-G5z" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1094" y="-730"/>
-        </scene>
-        <!--Item 2-->
+        <!--Eat-->
         <scene sceneID="9qR-7z-FQt">
             <objects>
-                <viewController id="IJa-2L-1G7" sceneMemberID="viewController">
+                <viewController title="Eat" id="IJa-2L-1G7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URO-0D-VBt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qFo-Gn-jfK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ty8-3E-Rac"/>
+                    <navigationItem key="navigationItem" id="NT6-YX-qAy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGO-Lf-Kjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="658"/>
+            <point key="canvasLocation" x="1597.1014492753625" y="657.58928571428567"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
+        <scene sceneID="J2R-No-Je7">
+            <objects>
+                <viewController title="Home" id="ETc-9h-OpM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIG-H0-i5n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBg-y0-Mi4">
+                                <rect key="frame" x="0.0" y="56" width="414" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ng7-MV-yXF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Zc-pj-Rv6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDB-xC-ids" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621.7391304347827" y="-677.00892857142856"/>
+        </scene>
+        <!--Study-->
         <scene sceneID="Zou-wY-a3p">
             <objects>
-                <viewController id="0yn-lF-Axm" sceneMemberID="viewController">
+                <viewController title="Study" id="0yn-lF-Axm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mag-1N-bFD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="nvz-DM-nIJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="pD3-5V-d5r"/>
+                    <navigationItem key="navigationItem" id="3KE-Qc-o77"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlW-nx-Osl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="50"/>
+            <point key="canvasLocation" x="1597.1014492753625" y="6.6964285714285712"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YvJ-P7-DeI">
             <objects>
                 <tabBarController id="WBB-dG-MzS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZT0-8x-OMF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OYj-hL-vBh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="0yn-lF-Axm" kind="relationship" relationship="viewControllers" id="BUd-WZ-jN8"/>
-                        <segue destination="IJa-2L-1G7" kind="relationship" relationship="viewControllers" id="iiq-vy-BzV"/>
+                        <segue destination="Krb-QY-Ly2" kind="relationship" relationship="viewControllers" id="4Ww-o8-3pF"/>
+                        <segue destination="oDG-xc-tyk" kind="relationship" relationship="viewControllers" id="BUd-WZ-jN8"/>
+                        <segue destination="tRH-l9-8dJ" kind="relationship" relationship="viewControllers" id="iiq-vy-BzV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBN-II-wtY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="354"/>
+            <point key="canvasLocation" x="-1033" y="348"/>
         </scene>
-        <!--Study Con-->
-        <scene sceneID="NB7-MT-phA">
+        <!--Study-->
+        <scene sceneID="W3S-WM-reM">
             <objects>
-                <viewController title="Study Con" id="sk5-3T-6ZZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Teg-YY-4iX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="PKb-jG-SO5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zsR-h8-UXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2033" y="-731"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="LuZ-0e-qG7">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VlE-P2-M57" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oDG-xc-tyk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Study" image="books.vertical.fill" catalog="system" id="pD3-5V-d5r"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cz8-am-Ukz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iVl-iO-SQz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hnc-FQ-ogx" kind="relationship" relationship="rootViewController" id="KjC-5V-sin"/>
+                        <segue destination="0yn-lF-Axm" kind="relationship" relationship="rootViewController" id="Usw-1K-68H"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bAY-lR-aQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eO-SY-JA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="-730"/>
+            <point key="canvasLocation" x="686.95652173913049" y="6.6964285714285712"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ZFf-2C-TQM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Krb-QY-Ly2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="iGW-PZ-d2h"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vt6-cO-Awq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iOG-vD-ene">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ETc-9h-OpM" kind="relationship" relationship="rootViewController" id="mJS-Ll-8Cf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnA-tt-ahB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="-677"/>
+        </scene>
+        <!--Eat-->
+        <scene sceneID="ha3-NI-3lh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRH-l9-8dJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Eat" image="fork.knife" catalog="system" id="ty8-3E-Rac"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lks-oO-KVe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IJa-2L-1G7" kind="relationship" relationship="rootViewController" id="5N5-eO-yfd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rd1-d4-M56" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686.95652173913049" y="657.58928571428567"/>
         </scene>
     </scenes>
     <resources>
-        <image name="books.vertical.circle.fill" catalog="system" width="128" height="121"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
         <image name="faviconn" width="500" height="500"/>
         <image name="fork.knife" catalog="system" width="92" height="128"/>
-        <image name="fork.knife.circle.fill" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
