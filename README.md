@@ -173,3 +173,13 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+###Sprint UNIT 12
+
+-[x] User can add ratings
+-[x] User can login
+-[x] User can navigate between tabs
+-[x] User can choose to view dining areas or study spots via buttons after logging in
+
+![Simulator Screen Recording - iPhone 11 - 2022-04-26 at 20 47 26](https://user-images.githubusercontent.com/74742605/165417036-eeee8224-7b91-49b6-9634-8c33297084d3.gif)
+
