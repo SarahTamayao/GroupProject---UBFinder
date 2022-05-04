@@ -174,6 +174,7 @@
                                 <rect key="frame" x="24" y="390.5" width="366" height="130"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="HpB-hY-cHy" secondAttribute="height" multiplier="183:65" id="BPt-WT-mx8"/>
                                     <constraint firstAttribute="height" constant="130" id="mSG-Nj-HEu"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -561,12 +562,14 @@
                             <constraint firstItem="3j5-wB-5LN" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="yC5-hA-Hct" secondAttribute="trailing" constant="79" id="JEI-ub-MB3"/>
                             <constraint firstItem="VDd-SN-txE" firstAttribute="top" secondItem="sHw-ha-31m" secondAttribute="bottom" constant="9.5" id="KyL-Qw-h48"/>
                             <constraint firstItem="yC5-hA-Hct" firstAttribute="leading" secondItem="VDd-SN-txE" secondAttribute="trailing" constant="8" symbolic="YES" id="MTg-Sd-emP"/>
+                            <constraint firstItem="JPG-dH-NED" firstAttribute="leading" secondItem="3j5-wB-5LN" secondAttribute="leading" constant="159" id="XFA-rN-GSP"/>
                             <constraint firstItem="sHw-ha-31m" firstAttribute="top" secondItem="2Qo-MB-VmX" secondAttribute="bottom" constant="6.5" id="dIq-b0-Re1"/>
                             <constraint firstItem="dXK-vh-fse" firstAttribute="leading" secondItem="3j5-wB-5LN" secondAttribute="leading" constant="28" id="e3c-UE-GNZ"/>
                             <constraint firstItem="yC5-hA-Hct" firstAttribute="top" relation="lessThanOrEqual" secondItem="sHw-ha-31m" secondAttribute="bottom" constant="1.5" id="eWw-uL-1ZC"/>
                             <constraint firstItem="JPG-dH-NED" firstAttribute="top" secondItem="Asn-Gr-hun" secondAttribute="bottom" constant="34" id="k5R-N2-q1x"/>
                             <constraint firstItem="sHw-ha-31m" firstAttribute="leading" secondItem="3j5-wB-5LN" secondAttribute="leading" constant="28" id="uWv-wQ-Y2S"/>
                             <constraint firstItem="Asn-Gr-hun" firstAttribute="leading" secondItem="3j5-wB-5LN" secondAttribute="leading" constant="28" id="uga-06-2rN"/>
+                            <constraint firstItem="3j5-wB-5LN" firstAttribute="trailing" secondItem="JPG-dH-NED" secondAttribute="trailing" constant="159" id="ztl-m5-EIs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Rating" id="Y0r-5v-Amd"/>
@@ -801,6 +804,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="V79-rv-rtM"/>
         <segue reference="3CF-TD-6YP"/>
     </inferredMetricsTieBreakers>
     <resources>

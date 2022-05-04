@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class studyViewController:
     UIViewController {
@@ -22,6 +23,23 @@ class studyViewController:
     @IBAction func submitButton(_ sender: Any) {
         
         print(studyStack.starsRating)
+        
+        let post = PFObject(className: "studyRatings")
+        
+        post["ratings"] = studyStack.starsRating
+        post["author"] = PFUser.current()!
+    
+        post.saveInBackground { success, error in
+            if success{
+                
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+                
+            }else{
+                
+                print("error!")
+            }
+        }
         
     }
     
