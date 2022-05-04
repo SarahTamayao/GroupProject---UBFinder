@@ -18,6 +18,8 @@
 		074EF2522807894800962FE3 /* UB_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF2512807894800962FE3 /* UB_FinderTests.swift */; };
 		074EF25C2807894800962FE3 /* UB_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF25B2807894800962FE3 /* UB_FinderUITests.swift */; };
 		074EF25E2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */; };
+		07D335302821FB10001CAAFE /* StudyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3352F2821FB10001CAAFE /* StudyStackView.swift */; };
+		07D335322821FBEE001CAAFE /* studyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D335312821FBEE001CAAFE /* studyViewController.swift */; };
 		B8A70B81FDE5DD549B77434A /* Pods_UB_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864FF51FD2EF03F11D40C3A4 /* Pods_UB_Finder.framework */; };
 		DA0CD6D85EA2F9DBF98268B5 /* Pods_UB_Finder_UB_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5395880B3EC46256926B992 /* Pods_UB_Finder_UB_FinderUITests.framework */; };
 		E57224E9DA54611CD9BF50E1 /* Pods_UB_FinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6BC7F68B6872D92445C027 /* Pods_UB_FinderTests.framework */; };
@@ -56,6 +58,8 @@
 		074EF2572807894800962FE3 /* UB FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UB FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		074EF25B2807894800962FE3 /* UB_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UB_FinderUITests.swift; sourceTree = "<group>"; };
 		074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UB_FinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07D3352F2821FB10001CAAFE /* StudyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyStackView.swift; sourceTree = "<group>"; };
+		07D335312821FBEE001CAAFE /* studyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyViewController.swift; sourceTree = "<group>"; };
 		237886A1A3FB842554040885 /* Pods-UB Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB Finder.release.xcconfig"; path = "Target Support Files/Pods-UB Finder/Pods-UB Finder.release.xcconfig"; sourceTree = "<group>"; };
 		25155EBC9C84C6A07CDEEAA2 /* Pods-UB FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB FinderTests.release.xcconfig"; path = "Target Support Files/Pods-UB FinderTests/Pods-UB FinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D6BC7F68B6872D92445C027 /* Pods_UB_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UB_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +133,8 @@
 				0716A13F2807966A00983D7D /* LoginViewController.swift */,
 				0733AA3E281A04C100767B2D /* DiningStackView.swift */,
 				0733AA40281A298100767B2D /* DiningViewController.swift */,
+				07D3352F2821FB10001CAAFE /* StudyStackView.swift */,
+				07D335312821FBEE001CAAFE /* studyViewController.swift */,
 			);
 			path = "UB Finder";
 			sourceTree = "<group>";
@@ -414,7 +420,9 @@
 			files = (
 				0733AA41281A298100767B2D /* DiningViewController.swift in Sources */,
 				0716A1402807966A00983D7D /* LoginViewController.swift in Sources */,
+				07D335322821FBEE001CAAFE /* studyViewController.swift in Sources */,
 				074EF23B2807894700962FE3 /* AppDelegate.swift in Sources */,
+				07D335302821FB10001CAAFE /* StudyStackView.swift in Sources */,
 				0733AA3F281A04C100767B2D /* DiningStackView.swift in Sources */,
 				074EF23D2807894700962FE3 /* SceneDelegate.swift in Sources */,
 			);

@@ -4,7 +4,6 @@
 //
 //  Created by Eric Xie  on 4/13/22.
 //
-
 import UIKit
 import Parse
 
@@ -20,8 +19,6 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    
     
     @IBAction func onSignIn(_ sender: Any) {
         
@@ -61,17 +58,9 @@ class LoginViewController: UIViewController {
                 print("Error: (\(String(describing: error?.localizedDescription)))" )
                 
             }
+            
         }
-
+        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
