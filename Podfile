@@ -10,6 +10,8 @@ target 'UB Finder' do
   pod "Parse"
 
   pod "MessageInputBar"
+  
+  pod "lottie-ios"
 
   # Pods for UB Finder
 
@@ -23,5 +25,5 @@ target 'UB Finder' do
   end
 
    # Add Parse pods and install
-
+   
 end
