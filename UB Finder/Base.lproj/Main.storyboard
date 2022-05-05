@@ -268,13 +268,7 @@
         <!--Home-->
         <scene sceneID="J2R-No-Je7">
             <objects>
-                <viewController title="Home" id="ETc-9h-OpM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sV7-bg-qhf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Jmk-WU-7qV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                <viewController title="Home" id="ETc-9h-OpM" customClass="HomeViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Home" id="1Zc-pj-Rv6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDB-xC-ids" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -560,7 +554,7 @@
         <!--Home-->
         <scene sceneID="ZFf-2C-TQM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Krb-QY-Ly2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Krb-QY-Ly2" customClass="Home" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="iGW-PZ-d2h"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vt6-cO-Awq"/>

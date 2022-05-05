@@ -20,6 +20,8 @@
 		074EF25E2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */; };
 		07D335302821FB10001CAAFE /* StudyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3352F2821FB10001CAAFE /* StudyStackView.swift */; };
 		07D335322821FBEE001CAAFE /* studyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D335312821FBEE001CAAFE /* studyViewController.swift */; };
+		883DA58228234D7A00AD47D4 /* 67928-studyly.json in Resources */ = {isa = PBXBuildFile; fileRef = 883DA58128234D7A00AD47D4 /* 67928-studyly.json */; };
+		883DA58628234FE900AD47D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DA58528234FE900AD47D4 /* HomeViewController.swift */; };
 		B8A70B81FDE5DD549B77434A /* Pods_UB_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864FF51FD2EF03F11D40C3A4 /* Pods_UB_Finder.framework */; };
 		DA0CD6D85EA2F9DBF98268B5 /* Pods_UB_Finder_UB_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5395880B3EC46256926B992 /* Pods_UB_Finder_UB_FinderUITests.framework */; };
 		E57224E9DA54611CD9BF50E1 /* Pods_UB_FinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6BC7F68B6872D92445C027 /* Pods_UB_FinderTests.framework */; };
@@ -65,6 +67,8 @@
 		3D6BC7F68B6872D92445C027 /* Pods_UB_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UB_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7039FB7A0AE30F4B870EF583 /* Pods-UB Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB Finder.debug.xcconfig"; path = "Target Support Files/Pods-UB Finder/Pods-UB Finder.debug.xcconfig"; sourceTree = "<group>"; };
 		864FF51FD2EF03F11D40C3A4 /* Pods_UB_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UB_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883DA58128234D7A00AD47D4 /* 67928-studyly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "67928-studyly.json"; sourceTree = SOURCE_ROOT; };
+		883DA58528234FE900AD47D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C5395880B3EC46256926B992 /* Pods_UB_Finder_UB_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UB_Finder_UB_FinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F29627A6A4C52F37C80968 /* Pods-UB FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB FinderTests.debug.xcconfig"; path = "Target Support Files/Pods-UB FinderTests/Pods-UB FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E03F29BFB4F46A0135E9C54C /* Pods-UB Finder-UB FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB Finder-UB FinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-UB Finder-UB FinderUITests/Pods-UB Finder-UB FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		074EF2392807894700962FE3 /* UB Finder */ = {
 			isa = PBXGroup;
 			children = (
+				883DA58128234D7A00AD47D4 /* 67928-studyly.json */,
 				074EF23A2807894700962FE3 /* AppDelegate.swift */,
 				074EF23C2807894700962FE3 /* SceneDelegate.swift */,
 				074EF2402807894700962FE3 /* Main.storyboard */,
@@ -135,6 +140,7 @@
 				0733AA40281A298100767B2D /* DiningViewController.swift */,
 				07D3352F2821FB10001CAAFE /* StudyStackView.swift */,
 				07D335312821FBEE001CAAFE /* studyViewController.swift */,
+				883DA58528234FE900AD47D4 /* HomeViewController.swift */,
 			);
 			path = "UB Finder";
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074EF2472807894800962FE3 /* LaunchScreen.storyboard in Resources */,
+				883DA58228234D7A00AD47D4 /* 67928-studyly.json in Resources */,
 				074EF2442807894800962FE3 /* Assets.xcassets in Resources */,
 				074EF2422807894700962FE3 /* Main.storyboard in Resources */,
 			);
@@ -421,6 +428,7 @@
 				0733AA41281A298100767B2D /* DiningViewController.swift in Sources */,
 				0716A1402807966A00983D7D /* LoginViewController.swift in Sources */,
 				07D335322821FBEE001CAAFE /* studyViewController.swift in Sources */,
+				883DA58628234FE900AD47D4 /* HomeViewController.swift in Sources */,
 				074EF23B2807894700962FE3 /* AppDelegate.swift in Sources */,
 				07D335302821FB10001CAAFE /* StudyStackView.swift in Sources */,
 				0733AA3F281A04C100767B2D /* DiningStackView.swift in Sources */,
