@@ -14,15 +14,30 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad () {
         super.viewDidLoad()
-
+        
         animationView = .init(name: "67928-studyly")
         animationView?.frame = CGRect(x:0, y:0, width:200, height:200)
         animationView?.contentMode = .scaleAspectFit
-        view.addSubview(animationView!)
+        animationView?.backgroundColor = .white
         animationView?.frame = view.bounds
+        animationView?.loopMode = .loop
+        view.addSubview(animationView!)
         animationView?.play()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        animationView = .init(name: "67928-studyly")
+        animationView?.frame = CGRect(x:0, y:0, width:200, height:200)
+        animationView?.contentMode = .scaleAspectFit
+        animationView?.backgroundColor = .white
+        animationView?.frame = view.bounds
+        animationView?.loopMode = .loop
+        view.addSubview(animationView!)
+        animationView?.play()
+        
+    }
 
     /*
     // MARK: - Navigation
