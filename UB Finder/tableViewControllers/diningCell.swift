@@ -12,6 +12,7 @@ class diningCell: UITableViewCell {
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var studyRatings: UILabel!
     @IBOutlet weak var locationPic: UIImageView!
+    @IBOutlet weak var seeMoreButton: UIButton!
     
     
     override func awakeFromNib() {

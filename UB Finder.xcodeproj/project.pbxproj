@@ -20,6 +20,8 @@
 		074EF2522807894800962FE3 /* UB_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF2512807894800962FE3 /* UB_FinderTests.swift */; };
 		074EF25C2807894800962FE3 /* UB_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF25B2807894800962FE3 /* UB_FinderUITests.swift */; };
 		074EF25E2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */; };
+		079B286E282A2D3A00AFCBD3 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079B286D282A2D3A00AFCBD3 /* profileViewController.swift */; };
+		079B2871282A361000AFCBD3 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079B2870282A361000AFCBD3 /* detailViewController.swift */; };
 		07D335302821FB10001CAAFE /* StudyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3352F2821FB10001CAAFE /* StudyStackView.swift */; };
 		07D335322821FBEE001CAAFE /* studyRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D335312821FBEE001CAAFE /* studyRatingViewController.swift */; };
 		07F633CB2829E4B900162F2F /* diningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F633CA2829E4B900162F2F /* diningCell.swift */; };
@@ -66,6 +68,8 @@
 		074EF2572807894800962FE3 /* UB FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UB FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		074EF25B2807894800962FE3 /* UB_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UB_FinderUITests.swift; sourceTree = "<group>"; };
 		074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UB_FinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		079B286D282A2D3A00AFCBD3 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		079B2870282A361000AFCBD3 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		07D3352F2821FB10001CAAFE /* StudyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyStackView.swift; sourceTree = "<group>"; };
 		07D335312821FBEE001CAAFE /* studyRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyRatingViewController.swift; sourceTree = "<group>"; };
 		07F633CA2829E4B900162F2F /* diningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningCell.swift; sourceTree = "<group>"; };
@@ -145,17 +149,17 @@
 		074EF2392807894700962FE3 /* UB Finder */ = {
 			isa = PBXGroup;
 			children = (
+				07F633CF2829E6C100162F2F /* HomeScreen */,
+				07F633CE2829E69800162F2F /* addRating */,
+				079B286F282A35C100AFCBD3 /* tableViewControllers */,
 				074EF2402807894700962FE3 /* Main.storyboard */,
 				074EF2452807894800962FE3 /* LaunchScreen.storyboard */,
 				0716A13F2807966A00983D7D /* LoginViewController.swift */,
-				07F633CF2829E6C100162F2F /* HomeScreen */,
+				079B286D282A2D3A00AFCBD3 /* profileViewController.swift */,
 				073DB9A12829E751009CFCAD /* Delegates */,
 				074EF2432807894800962FE3 /* Assets.xcassets */,
 				074EF2482807894800962FE3 /* Info.plist */,
-				07F633CA2829E4B900162F2F /* diningCell.swift */,
-				07F633CC2829E4D900162F2F /* studyCell.swift */,
-				073DB9A32829E870009CFCAD /* diningViewController.swift */,
-				073DB9A52829E946009CFCAD /* studyViewController.swift */,
+				079B2870282A361000AFCBD3 /* detailViewController.swift */,
 			);
 			path = "UB Finder";
 			sourceTree = "<group>";
@@ -177,6 +181,17 @@
 			path = "UB FinderUITests";
 			sourceTree = "<group>";
 		};
+		079B286F282A35C100AFCBD3 /* tableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				073DB9A32829E870009CFCAD /* diningViewController.swift */,
+				07F633CA2829E4B900162F2F /* diningCell.swift */,
+				073DB9A52829E946009CFCAD /* studyViewController.swift */,
+				07F633CC2829E4D900162F2F /* studyCell.swift */,
+			);
+			path = tableViewControllers;
+			sourceTree = "<group>";
+		};
 		07F633CE2829E69800162F2F /* addRating */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +206,6 @@
 		07F633CF2829E6C100162F2F /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				07F633CE2829E69800162F2F /* addRating */,
 				883DA58528234FE900AD47D4 /* HomeViewController.swift */,
 				883DA58128234D7A00AD47D4 /* 67928-studyly.json */,
 			);
@@ -461,10 +475,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079B286E282A2D3A00AFCBD3 /* profileViewController.swift in Sources */,
 				073DB9A62829E946009CFCAD /* studyViewController.swift in Sources */,
 				0733AA41281A298100767B2D /* DiningRatingViewController.swift in Sources */,
 				07F633CD2829E4D900162F2F /* studyCell.swift in Sources */,
 				0716A1402807966A00983D7D /* LoginViewController.swift in Sources */,
+				079B2871282A361000AFCBD3 /* detailViewController.swift in Sources */,
 				07D335322821FBEE001CAAFE /* studyRatingViewController.swift in Sources */,
 				883DA58628234FE900AD47D4 /* HomeViewController.swift in Sources */,
 				073DB9A42829E870009CFCAD /* diningViewController.swift in Sources */,

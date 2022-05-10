@@ -1,5 +1,5 @@
 //
-//  studyViewController.swift
+//  diningViewController.swift
 //  UB Finder
 //
 //  Created by Eric Xie  on 5/9/22.
@@ -8,8 +8,11 @@
 import UIKit
 import Parse
 
-class studyViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet var studyTableView: UITableView!
+class diningViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+    
+    
+    @IBOutlet var diningTableView: UITableView!
     
     var locName = [PFObject]()
     
@@ -17,15 +20,15 @@ class studyViewController: UIViewController,UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        studyTableView.delegate = self
-        studyTableView.dataSource = self
+        diningTableView.delegate = self
+        diningTableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let query = PFQuery(className: "studyPlace")
-        query.includeKey("locationPlace")
+        let query = PFQuery(className: "diningPlace")
+        query.includeKey("locationName")
         query.limit = 20
         
         query.findObjectsInBackground { locName, error in
@@ -33,7 +36,7 @@ class studyViewController: UIViewController,UITableViewDelegate, UITableViewData
             if locName != nil {
                 
                 self.locName = locName!
-                self.studyTableView.reloadData()
+                self.diningTableView.reloadData()
                 
             }
         }
@@ -49,15 +52,28 @@ class studyViewController: UIViewController,UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "studyCell") as! studyCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "diningCell") as! diningCell
         
         let post = locName[indexPath.row]
         
-        cell.locationName.text = (post["locationPlace"] as! String)
+        cell.locationName.text = (post["locationName"] as! String)
         
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! detailViewController
+        
+        let post = locName[indexPath.row]
+        
+        vc.placeName = post["locationName"] as! String
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     
 
     /*
