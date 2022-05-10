@@ -1,5 +1,5 @@
 //
-//  detailViewController.swift
+//  studyDetailViewController.swift
 //  UB Finder
 //
 //  Created by Eric Xie  on 5/10/22.
@@ -7,8 +7,7 @@
 
 import UIKit
 
-class detailViewController: UIViewController {
-
+class studyDetailViewController: UIViewController {
 
     @IBOutlet weak var placePic: UIImageView!
     
@@ -35,7 +34,6 @@ class detailViewController: UIViewController {
         
     }
     
-
     /*
     // MARK: - Navigation
 

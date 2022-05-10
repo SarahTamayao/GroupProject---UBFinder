@@ -64,7 +64,7 @@ class diningViewController: UIViewController,UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! detailViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "diningDetailViewController") as! diningDetailViewController
         
         let post = locName[indexPath.row]
         

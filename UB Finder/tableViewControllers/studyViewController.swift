@@ -61,7 +61,7 @@ class studyViewController: UIViewController,UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! detailViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "studyDetailViewController") as! studyDetailViewController
         
         let post = locName[indexPath.row]
         
