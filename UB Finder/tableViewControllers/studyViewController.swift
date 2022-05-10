@@ -63,6 +63,9 @@ class studyViewController: UIViewController,UITableViewDelegate, UITableViewData
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! detailViewController
         
+        let post = locName[indexPath.row]
+        
+        vc.placeName = post["locationPlace"] as! String
         
         self.navigationController?.pushViewController(vc, animated: true)
         
