@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		0716A1402807966A00983D7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716A13F2807966A00983D7D /* LoginViewController.swift */; };
 		0733AA3F281A04C100767B2D /* DiningStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733AA3E281A04C100767B2D /* DiningStackView.swift */; };
-		0733AA41281A298100767B2D /* DiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733AA40281A298100767B2D /* DiningViewController.swift */; };
+		0733AA41281A298100767B2D /* DiningRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733AA40281A298100767B2D /* DiningRatingViewController.swift */; };
+		073DB9A42829E870009CFCAD /* diningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DB9A32829E870009CFCAD /* diningViewController.swift */; };
+		073DB9A62829E946009CFCAD /* studyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DB9A52829E946009CFCAD /* studyViewController.swift */; };
 		074EF23B2807894700962FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF23A2807894700962FE3 /* AppDelegate.swift */; };
 		074EF23D2807894700962FE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF23C2807894700962FE3 /* SceneDelegate.swift */; };
 		074EF2422807894700962FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074EF2402807894700962FE3 /* Main.storyboard */; };
@@ -19,7 +21,9 @@
 		074EF25C2807894800962FE3 /* UB_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF25B2807894800962FE3 /* UB_FinderUITests.swift */; };
 		074EF25E2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */; };
 		07D335302821FB10001CAAFE /* StudyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3352F2821FB10001CAAFE /* StudyStackView.swift */; };
-		07D335322821FBEE001CAAFE /* studyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D335312821FBEE001CAAFE /* studyViewController.swift */; };
+		07D335322821FBEE001CAAFE /* studyRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D335312821FBEE001CAAFE /* studyRatingViewController.swift */; };
+		07F633CB2829E4B900162F2F /* diningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F633CA2829E4B900162F2F /* diningCell.swift */; };
+		07F633CD2829E4D900162F2F /* studyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F633CC2829E4D900162F2F /* studyCell.swift */; };
 		883DA58228234D7A00AD47D4 /* 67928-studyly.json in Resources */ = {isa = PBXBuildFile; fileRef = 883DA58128234D7A00AD47D4 /* 67928-studyly.json */; };
 		883DA58628234FE900AD47D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DA58528234FE900AD47D4 /* HomeViewController.swift */; };
 		B8A70B81FDE5DD549B77434A /* Pods_UB_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864FF51FD2EF03F11D40C3A4 /* Pods_UB_Finder.framework */; };
@@ -47,7 +51,9 @@
 /* Begin PBXFileReference section */
 		0716A13F2807966A00983D7D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0733AA3E281A04C100767B2D /* DiningStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningStackView.swift; sourceTree = "<group>"; };
-		0733AA40281A298100767B2D /* DiningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningViewController.swift; sourceTree = "<group>"; };
+		0733AA40281A298100767B2D /* DiningRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningRatingViewController.swift; sourceTree = "<group>"; };
+		073DB9A32829E870009CFCAD /* diningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningViewController.swift; sourceTree = "<group>"; };
+		073DB9A52829E946009CFCAD /* studyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyViewController.swift; sourceTree = "<group>"; };
 		074EF2372807894700962FE3 /* UB Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UB Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		074EF23A2807894700962FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		074EF23C2807894700962FE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,13 +67,15 @@
 		074EF25B2807894800962FE3 /* UB_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UB_FinderUITests.swift; sourceTree = "<group>"; };
 		074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UB_FinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07D3352F2821FB10001CAAFE /* StudyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyStackView.swift; sourceTree = "<group>"; };
-		07D335312821FBEE001CAAFE /* studyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyViewController.swift; sourceTree = "<group>"; };
+		07D335312821FBEE001CAAFE /* studyRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyRatingViewController.swift; sourceTree = "<group>"; };
+		07F633CA2829E4B900162F2F /* diningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningCell.swift; sourceTree = "<group>"; };
+		07F633CC2829E4D900162F2F /* studyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyCell.swift; sourceTree = "<group>"; };
 		237886A1A3FB842554040885 /* Pods-UB Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB Finder.release.xcconfig"; path = "Target Support Files/Pods-UB Finder/Pods-UB Finder.release.xcconfig"; sourceTree = "<group>"; };
 		25155EBC9C84C6A07CDEEAA2 /* Pods-UB FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB FinderTests.release.xcconfig"; path = "Target Support Files/Pods-UB FinderTests/Pods-UB FinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D6BC7F68B6872D92445C027 /* Pods_UB_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UB_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7039FB7A0AE30F4B870EF583 /* Pods-UB Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB Finder.debug.xcconfig"; path = "Target Support Files/Pods-UB Finder/Pods-UB Finder.debug.xcconfig"; sourceTree = "<group>"; };
 		864FF51FD2EF03F11D40C3A4 /* Pods_UB_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UB_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		883DA58128234D7A00AD47D4 /* 67928-studyly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "67928-studyly.json"; sourceTree = SOURCE_ROOT; };
+		883DA58128234D7A00AD47D4 /* 67928-studyly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "67928-studyly.json"; path = "UB Finder/HomeScreen/67928-studyly.json"; sourceTree = SOURCE_ROOT; };
 		883DA58528234FE900AD47D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C5395880B3EC46256926B992 /* Pods_UB_Finder_UB_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UB_Finder_UB_FinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F29627A6A4C52F37C80968 /* Pods-UB FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UB FinderTests.debug.xcconfig"; path = "Target Support Files/Pods-UB FinderTests/Pods-UB FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073DB9A12829E751009CFCAD /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				074EF23A2807894700962FE3 /* AppDelegate.swift */,
+				074EF23C2807894700962FE3 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		074EF22E2807894700962FE3 = {
 			isa = PBXGroup;
 			children = (
@@ -128,19 +145,17 @@
 		074EF2392807894700962FE3 /* UB Finder */ = {
 			isa = PBXGroup;
 			children = (
-				883DA58128234D7A00AD47D4 /* 67928-studyly.json */,
-				074EF23A2807894700962FE3 /* AppDelegate.swift */,
-				074EF23C2807894700962FE3 /* SceneDelegate.swift */,
 				074EF2402807894700962FE3 /* Main.storyboard */,
-				074EF2432807894800962FE3 /* Assets.xcassets */,
 				074EF2452807894800962FE3 /* LaunchScreen.storyboard */,
-				074EF2482807894800962FE3 /* Info.plist */,
 				0716A13F2807966A00983D7D /* LoginViewController.swift */,
-				0733AA3E281A04C100767B2D /* DiningStackView.swift */,
-				0733AA40281A298100767B2D /* DiningViewController.swift */,
-				07D3352F2821FB10001CAAFE /* StudyStackView.swift */,
-				07D335312821FBEE001CAAFE /* studyViewController.swift */,
-				883DA58528234FE900AD47D4 /* HomeViewController.swift */,
+				07F633CF2829E6C100162F2F /* HomeScreen */,
+				073DB9A12829E751009CFCAD /* Delegates */,
+				074EF2432807894800962FE3 /* Assets.xcassets */,
+				074EF2482807894800962FE3 /* Info.plist */,
+				07F633CA2829E4B900162F2F /* diningCell.swift */,
+				07F633CC2829E4D900162F2F /* studyCell.swift */,
+				073DB9A32829E870009CFCAD /* diningViewController.swift */,
+				073DB9A52829E946009CFCAD /* studyViewController.swift */,
 			);
 			path = "UB Finder";
 			sourceTree = "<group>";
@@ -160,6 +175,27 @@
 				074EF25D2807894800962FE3 /* UB_FinderUITestsLaunchTests.swift */,
 			);
 			path = "UB FinderUITests";
+			sourceTree = "<group>";
+		};
+		07F633CE2829E69800162F2F /* addRating */ = {
+			isa = PBXGroup;
+			children = (
+				0733AA40281A298100767B2D /* DiningRatingViewController.swift */,
+				07D3352F2821FB10001CAAFE /* StudyStackView.swift */,
+				07D335312821FBEE001CAAFE /* studyRatingViewController.swift */,
+				0733AA3E281A04C100767B2D /* DiningStackView.swift */,
+			);
+			path = addRating;
+			sourceTree = "<group>";
+		};
+		07F633CF2829E6C100162F2F /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				07F633CE2829E69800162F2F /* addRating */,
+				883DA58528234FE900AD47D4 /* HomeViewController.swift */,
+				883DA58128234D7A00AD47D4 /* 67928-studyly.json */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 		DF840ADAD0F39F3B40C0D387 /* Frameworks */ = {
@@ -425,12 +461,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0733AA41281A298100767B2D /* DiningViewController.swift in Sources */,
+				073DB9A62829E946009CFCAD /* studyViewController.swift in Sources */,
+				0733AA41281A298100767B2D /* DiningRatingViewController.swift in Sources */,
+				07F633CD2829E4D900162F2F /* studyCell.swift in Sources */,
 				0716A1402807966A00983D7D /* LoginViewController.swift in Sources */,
-				07D335322821FBEE001CAAFE /* studyViewController.swift in Sources */,
+				07D335322821FBEE001CAAFE /* studyRatingViewController.swift in Sources */,
 				883DA58628234FE900AD47D4 /* HomeViewController.swift in Sources */,
+				073DB9A42829E870009CFCAD /* diningViewController.swift in Sources */,
 				074EF23B2807894700962FE3 /* AppDelegate.swift in Sources */,
 				07D335302821FB10001CAAFE /* StudyStackView.swift in Sources */,
+				07F633CB2829E4B900162F2F /* diningCell.swift in Sources */,
 				0733AA3F281A04C100767B2D /* DiningStackView.swift in Sources */,
 				074EF23D2807894700962FE3 /* SceneDelegate.swift in Sources */,
 			);

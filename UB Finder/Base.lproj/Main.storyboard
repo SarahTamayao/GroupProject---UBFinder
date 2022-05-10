@@ -86,13 +86,13 @@
         <!--Eat-->
         <scene sceneID="9qR-7z-FQt">
             <objects>
-                <viewController title="Eat" id="IJa-2L-1G7" sceneMemberID="viewController">
+                <viewController title="Eat" modalPresentationStyle="fullScreen" id="IJa-2L-1G7" customClass="diningViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="443-3T-ynu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="139" id="RpQ-3r-LWy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="diningCell" rowHeight="139" id="RpQ-3r-LWy" customClass="diningCell" customModule="UB_Finder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RpQ-3r-LWy" id="08u-mj-xS7">
@@ -100,26 +100,27 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cpU-RT-zj0">
-                                            <rect key="frame" x="19" y="13.5" width="118" height="25"/>
+                                            <rect key="frame" x="19" y="14" width="118" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-q3-6oC">
-                                            <rect key="frame" x="194" y="0.5" width="199" height="139"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-q3-6oC">
+                                            <rect key="frame" x="194" y="1.5" width="199" height="139"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="199" id="Np7-dG-nLk"/>
+                                                <constraint firstAttribute="height" constant="141.5" id="qVS-Tm-UtO"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXM-Yu-PBC">
-                                            <rect key="frame" x="19" y="50.5" width="47" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXM-Yu-PBC">
+                                            <rect key="frame" x="19" y="55" width="47" height="18"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEY-A3-ZTc">
-                                            <rect key="frame" x="8" y="96.5" width="93" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEY-A3-ZTc">
+                                            <rect key="frame" x="8" y="101" width="93" height="27.5"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="See More">
                                                 <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
@@ -129,7 +130,22 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="6qL-q3-6oC" secondAttribute="trailing" constant="21" id="40I-dS-diA"/>
+                                        <constraint firstItem="TXM-Yu-PBC" firstAttribute="leading" secondItem="08u-mj-xS7" secondAttribute="leading" constant="19" id="8zX-Ri-8K1"/>
+                                        <constraint firstItem="TXM-Yu-PBC" firstAttribute="top" secondItem="cpU-RT-zj0" secondAttribute="bottom" constant="12" id="FWi-Sg-hgP"/>
+                                        <constraint firstItem="uEY-A3-ZTc" firstAttribute="leading" secondItem="08u-mj-xS7" secondAttribute="leading" constant="8" id="FzJ-nk-hcF"/>
+                                        <constraint firstItem="uEY-A3-ZTc" firstAttribute="top" secondItem="TXM-Yu-PBC" secondAttribute="bottom" constant="28" id="GN3-HG-TY3"/>
+                                        <constraint firstItem="6qL-q3-6oC" firstAttribute="top" secondItem="08u-mj-xS7" secondAttribute="top" constant="0.5" id="LTP-ln-OOu"/>
+                                        <constraint firstAttribute="bottom" secondItem="uEY-A3-ZTc" secondAttribute="bottom" constant="10.5" id="Rbl-2t-Y37"/>
+                                        <constraint firstItem="6qL-q3-6oC" firstAttribute="leading" secondItem="cpU-RT-zj0" secondAttribute="trailing" constant="57" id="aSH-Vr-ysF"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationName" destination="cpU-RT-zj0" id="L6z-hd-pEd"/>
+                                    <outlet property="locationPic" destination="6qL-q3-6oC" id="yHQ-Kj-h7Y"/>
+                                    <outlet property="studyRatings" destination="TXM-Yu-PBC" id="AY0-Bj-6jL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -140,6 +156,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="diningTableView" destination="443-3T-ynu" id="FNn-uO-8kO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGO-Lf-Kjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,7 +167,7 @@
         <!--Add Rating-->
         <scene sceneID="kgR-uT-MAR">
             <objects>
-                <viewController id="KKg-vP-Txm" customClass="DiningViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KKg-vP-Txm" customClass="DiningRatingViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oc9-Rj-rW1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +196,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork.knife" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Bsy-L4-kr2">
-                                <rect key="frame" x="0.0" y="79" width="414" height="235.5"/>
+                                <rect key="frame" x="0.0" y="91" width="414" height="235.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="Kvx-SA-VDd"/>
                                     <constraint firstAttribute="height" constant="234" id="n52-uc-jha"/>
@@ -268,7 +287,7 @@
         <!--Home-->
         <scene sceneID="J2R-No-Je7">
             <objects>
-                <viewController title="Home" id="ETc-9h-OpM" customClass="HomeViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" modalPresentationStyle="fullScreen" id="ETc-9h-OpM" customClass="HomeViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Home" id="1Zc-pj-Rv6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDB-xC-ids" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -336,13 +355,13 @@
         <!--Study-->
         <scene sceneID="Zou-wY-a3p">
             <objects>
-                <viewController title="Study" id="0yn-lF-Axm" sceneMemberID="viewController">
+                <viewController title="Study" modalPresentationStyle="fullScreen" id="0yn-lF-Axm" customClass="studyViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="N0i-iu-aPD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KbC-1y-Pi0">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="studyCell" rowHeight="139" id="KbC-1y-Pi0" customClass="studyCell" customModule="UB_Finder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KbC-1y-Pi0" id="KPx-tw-fGa">
@@ -356,20 +375,21 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qcq-wo-U8c">
-                                            <rect key="frame" x="195" y="-2" width="199" height="139"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qcq-wo-U8c">
+                                            <rect key="frame" x="195" y="4" width="199" height="133"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="141.5" id="1cP-yH-hrg"/>
+                                                <constraint firstAttribute="width" constant="199" id="1fB-aR-see"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hv-2o-WYU">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hv-2o-WYU">
                                             <rect key="frame" x="20" y="48" width="47" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-Tb-ndT">
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-Tb-ndT">
                                             <rect key="frame" x="9" y="94" width="93" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="See More">
                                                 <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
@@ -379,7 +399,21 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qcq-wo-U8c" firstAttribute="top" secondItem="KPx-tw-fGa" secondAttribute="top" constant="3" id="7mq-kh-vjn"/>
+                                        <constraint firstAttribute="bottom" secondItem="qcq-wo-U8c" secondAttribute="bottom" constant="0.5" id="ODt-QZ-XQK"/>
+                                        <constraint firstItem="3Hv-2o-WYU" firstAttribute="leading" secondItem="KPx-tw-fGa" secondAttribute="leadingMargin" id="OKy-5m-CP8"/>
+                                        <constraint firstItem="qcq-wo-U8c" firstAttribute="leading" secondItem="xzj-Sk-gVa" secondAttribute="trailing" constant="57" id="T3a-Oo-5TY"/>
+                                        <constraint firstAttribute="bottom" secondItem="Egg-Tb-ndT" secondAttribute="bottom" constant="13" id="ddZ-nR-4AJ"/>
+                                        <constraint firstItem="Egg-Tb-ndT" firstAttribute="top" secondItem="3Hv-2o-WYU" secondAttribute="bottom" constant="28" id="pMt-av-gS0"/>
+                                        <constraint firstItem="3Hv-2o-WYU" firstAttribute="top" secondItem="xzj-Sk-gVa" secondAttribute="bottom" constant="12" id="uXp-0l-8AG"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationName" destination="xzj-Sk-gVa" id="Gnn-uI-4Y4"/>
+                                    <outlet property="locationPic" destination="qcq-wo-U8c" id="6iy-X2-DXC"/>
+                                    <outlet property="studyRatings" destination="3Hv-2o-WYU" id="JJz-z3-pyf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -390,6 +424,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="studyTableView" destination="N0i-iu-aPD" id="RQt-IA-XkG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlW-nx-Osl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -398,7 +435,7 @@
         <!--Add Rating-->
         <scene sceneID="zjy-wk-Ml2">
             <objects>
-                <viewController title="Add Rating" id="e4F-Pk-rfo" customClass="studyViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Add Rating" id="e4F-Pk-rfo" customClass="studyRatingViewController" customModule="UB_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mgd-eU-4dy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -535,7 +572,7 @@
         <!--Study-->
         <scene sceneID="W3S-WM-reM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oDG-xc-tyk" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="oDG-xc-tyk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Study" image="books.vertical.fill" catalog="system" id="pD3-5V-d5r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iVl-iO-SQz">
@@ -554,7 +591,7 @@
         <!--Home-->
         <scene sceneID="ZFf-2C-TQM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Krb-QY-Ly2" customClass="Home" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="Krb-QY-Ly2" customClass="Home" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="iGW-PZ-d2h"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vt6-cO-Awq"/>
@@ -575,7 +612,7 @@
         <!--Eat-->
         <scene sceneID="ha3-NI-3lh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRH-l9-8dJ" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="tRH-l9-8dJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Eat" image="fork.knife" catalog="system" id="ty8-3E-Rac"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lks-oO-KVe">
@@ -700,7 +737,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="W3z-XP-TNw"/>
-        <segue reference="3CF-TD-6YP"/>
+        <segue reference="5N5-eO-yfd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="95"/>

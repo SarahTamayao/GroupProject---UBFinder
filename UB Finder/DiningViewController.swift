@@ -1,49 +1,65 @@
 //
-//  DiningViewController.swift
+//  diningViewController.swift
 //  UB Finder
 //
-//  Created by Eric Xie  on 4/27/22.
+//  Created by Eric Xie  on 5/9/22.
 //
 
 import UIKit
 import Parse
 
-class DiningViewController: UIViewController {
+class diningViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     
-    @IBOutlet weak var diningRatingStackView: DiningStackView!
     
+    @IBOutlet var diningTableView: UITableView!
+    
+    var locName = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        diningTableView.delegate = self
+        diningTableView.dataSource = self
     }
     
-    @IBAction func Submit(_ sender: Any) {
-        print(diningRatingStackView.starsRating)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        let post = PFObject(className: "diningRatings")
+        let query = PFQuery(className: "diningPlace")
+        query.includeKey("locationName")
+        query.limit = 20
         
-        post["ratings"] = diningRatingStackView.starsRating
-        post["author"] = PFUser.current()!
-    
-        post.saveInBackground { success, error in
-            if success{
+        query.findObjectsInBackground { locName, error in
+            
+            if locName != nil {
                 
-                self.dismiss(animated: true, completion: nil)
-                print("saved!")
+                self.locName = locName!
+                self.diningTableView.reloadData()
                 
-            }else{
-                
-                print("error!")
             }
         }
         
+        
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return locName.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "diningCell") as! diningCell
+        
+        let post = locName[indexPath.row]
+        
+        cell.locationName.text = (post["locationName"] as! String)
+        
+        return cell
+        
     }
     
     
