@@ -34,6 +34,9 @@ class studyDetailViewController: UIViewController {
         
     }
     
+    
+    
+    
     /*
     // MARK: - Navigation
 

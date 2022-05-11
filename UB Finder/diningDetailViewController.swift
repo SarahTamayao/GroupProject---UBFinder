@@ -32,8 +32,23 @@ class diningDetailViewController: UIViewController {
         
         nameOfPlace.text = placeName
         
-        
     }
+    
+    @IBAction func addRatingPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "diningAddRatingSegue", sender: self)
+    }
+    
+        // Create a variable to store the name the user entered on textField
+            
+        // Create a new variable to store the instance of the SecondViewController
+        // set the variable from the SecondViewController that will receive the data
+        
+
+        
+        
+        
+        
     
 
     /*
