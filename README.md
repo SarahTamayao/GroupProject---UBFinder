@@ -31,9 +31,9 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 
 **Required Must-have Stories**
 
-- [X] Users can view app icon and login page
-- [X]  Users can login and view the homepage with buttons to go to the dining page and studying page
-- [ ] Users can rate different dining areas
+- [ ] Users can view app icon and login page (Completed)
+- [ ] Users can login and view the homepage with buttons to go to the dining page and studying page (Completed)
+- [ ] Users can rate different dining areas - Completed
 - [ ] Users can rate different study spots
 - [ ] Users can view existing ratings for dining areas
 - [ ] Users can view existing ratings for study spots
@@ -42,7 +42,7 @@ Locates areas for the optimal dining and studying experience based on ratings fr
 
 **Optional Nice-to-have Stories**
 
-- [X] Users can authenticate using their USERNAME & Password information
+- [ ] Users can authenticate using their USERNAME & Password information
 - [ ] Users can favorite locations to pin them to the top of their page
 - [ ] Users can click on a live map to locate each spot
 - [ ] Users can view pictures of each spot
